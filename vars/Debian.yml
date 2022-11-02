@@ -3,5 +3,5 @@ pkgs:
 - python3-paramiko
 - python3-docker
 - python3-distutils
-- docker-ce
+- docker
 - docker-compose
