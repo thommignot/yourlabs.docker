@@ -125,6 +125,11 @@
     group: root
     mode: '755'
 
+- name: Give docker access to internet
+  template:
+    src: "{{ role_path }}/daemon.json"
+    dest: "/etc/docker/daemon.json"
+
 - name: Flush handlers
   meta: flush_handlers
 
